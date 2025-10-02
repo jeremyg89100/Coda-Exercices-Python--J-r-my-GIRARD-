@@ -98,6 +98,20 @@ def exercice11():
     except ValueError:
         print(f"Veuillez entrer un nombre")
 
+def exercice12():
+    message = "Ce message s'affichera 5 fois \n"
+    message5 = message + message + message + message + message
+    print(f"{message5}")
+
+def exercice13():
+    compteur = 0
+    
+    for compteur in range( compteur + 1 , 6):
+        print(f"{compteur}")
+
+   
+    
+
    
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -124,6 +138,10 @@ def main():
         exercice10()
     if choix == "11":
         exercice11()
+    if choix == "12":
+        exercice12()
+    if choix == "13":
+        exercice13()
 
     else:
         print("Exercice non reconnu.")
