@@ -152,6 +152,15 @@ def exercice18():
     
     except ValueError:
         print(f"Veuillez rentrer un chiffre.")
+    
+def exercice19():
+    try:
+        prix = int(input("Veuillez entrer un prix"))
+        taxePrix = prix * 20 / 100 + prix
+        print(f"Pour un prix de {prix} euros, le coût après taxe sera de {taxePrix} euros.")
+
+    except ValueError:
+        print(f"Veuillez entrer un chiffre")
 
 
 
@@ -200,6 +209,8 @@ def main():
         exercice17()
     if choix == "18":
         exercice18()
+    if choix == "19":
+        exercice19()
 
     else:
         print("Exercice non reconnu.")
