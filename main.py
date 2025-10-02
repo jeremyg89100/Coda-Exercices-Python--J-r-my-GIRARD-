@@ -120,11 +120,41 @@ def exercice14():
 def exercice15():
     try:
         nombre1 = int (input("Entrez un chiffre"))
-        aireCarre = nombre1 * 4 
+        perimetreCarre = nombre1 * 4 
+        print(f"Le périmètre du carré est de {perimetreCarre} cm.")
+
+    except ValueError:
+        print(f"Veuillez entrer un chiffre.")
+
+def exercice16():
+    try:
+        nombre1 = int(input("Entrez un chiffre"))
+        aireCarre = nombre1 * nombre1
         print(f"L'aire du carré est de {aireCarre} cm.")
 
     except ValueError:
-        print(f"Veuillez entrer un nombre.")
+        print(f"Veuillez entrer un chiffre")
+
+def exercice17():
+    try:
+        euro = int(input("Entrez un chiffre"))
+        dollar = euro * 1.1
+        print(f"{euro} euros est égal à {dollar} $.")
+
+    except ValueError:
+        print(f"Veuillez entrer un chiffre.")
+
+def exercice18():
+    try:
+        minute = int(input("Entrez un chiffre"))
+        minuteEnSeconde = minute * 60
+        print(f"{minute} minutes est égal à {minuteEnSeconde} secondes.")
+    
+    except ValueError:
+        print(f"Veuillez rentrer un chiffre.")
+
+
+
 
 
    
@@ -164,6 +194,12 @@ def main():
         exercice14()
     if choix == "15":
         exercice15()
+    if choix == "16":
+        exercice16()
+    if choix == "17":
+        exercice17()
+    if choix == "18":
+        exercice18()
 
     else:
         print("Exercice non reconnu.")
