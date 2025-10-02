@@ -5,6 +5,9 @@ def exercice1():
 def exercice2():
     prenom = input("Entrez votre prénom")
     print (f"Bonjour {prenom}")
+
+def exercice3():
+    print(f" Première ligne\n Deuxième ligne\n Troisième ligne \n")
    
 
 def main():
@@ -14,6 +17,8 @@ def main():
         exercice1()
     if choix == "2":
         exercice2()
+    if choix == "3":
+        exercice3()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
