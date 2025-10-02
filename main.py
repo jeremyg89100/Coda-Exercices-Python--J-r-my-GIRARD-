@@ -55,6 +55,16 @@ def exercice7():
     except ValueError:
         print(f"Veuillez rentrer un nombre")
 
+def exercice8():
+    try:
+        nombre1 = int (input("Entrez un nombre"))
+        nombre2 = int (input("Entrez un nombre"))
+        resultat = nombre1 / nombre2
+        print(f"{resultat}")
+
+    except ValueError:
+        print(f"Veuillez entrer un nombre")
+
 
     
 
@@ -76,6 +86,8 @@ def main():
         exercice6()
     if choix == "7":
         exercice7()
+    if choix == "8":
+        exercice8()
 
     else:
         print("Exercice non reconnu.")
