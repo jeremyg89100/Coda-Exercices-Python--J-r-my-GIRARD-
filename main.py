@@ -109,6 +109,24 @@ def exercice13():
     for compteur in range( compteur + 1 , 6):
         print(f"{compteur}")
 
+def exercice14():
+    compteur = 1
+   
+
+    for compteur in range(compteur , 6):
+        resultat = compteur * 2
+        print(f"{compteur} x 2 = {resultat}")
+
+def exercice15():
+    try:
+        nombre1 = int (input("Entrez un chiffre"))
+        aireCarre = nombre1 * 4 
+        print(f"L'aire du carré est de {aireCarre} cm.")
+
+    except ValueError:
+        print(f"Veuillez entrer un nombre.")
+
+
    
     
 
@@ -142,6 +160,10 @@ def main():
         exercice12()
     if choix == "13":
         exercice13()
+    if choix =="14":
+        exercice14()
+    if choix == "15":
+        exercice15()
 
     else:
         print("Exercice non reconnu.")
