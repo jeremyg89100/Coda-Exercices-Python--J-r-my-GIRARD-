@@ -29,21 +29,32 @@ def exercice5():
     try:
         nombre1 = int (input("Entrez un chiffre."))
         nombre2 = int (input("Entrez un chiffre."))
-        nombreAddition = nombre1 + nombre2
-        print(f"{nombreAddition}")
+        resultat = nombre1 + nombre2
+        print(f"{resultat}")
 
     except ValueError:
         print(f"Veuillez taper un chiffre")
 
 def exercice6():
     try:
-        nombre1 = int (input("Entrez un chiffre"))
+        nombre1 = int (input("Entrez un nombre"))
         nombre2 = int (input("Entrez un nombre"))
-        nombreSoustraction = nombre1 - nombre2
-        print(f"{nombreSoustraction}")
+        resultat = nombre1 - nombre2
+        print(f"{resultat}")
 
     except ValueError:
         print(f"Veuillez entrer un nombre")
+
+def exercice7():
+    try:
+        nombre1 = int (input("Entrez un nombre"))
+        nombre2 = int (input("Entrez un nombre"))
+        resultat = nombre1 * nombre2
+        print(f"{resultat}")
+
+    except ValueError:
+        print(f"Veuillez rentrer un nombre")
+
 
     
 
@@ -63,6 +74,8 @@ def main():
         exercice5()
     if choix == "6":
         exercice6()
+    if choix == "7":
+        exercice7()
 
     else:
         print("Exercice non reconnu.")
