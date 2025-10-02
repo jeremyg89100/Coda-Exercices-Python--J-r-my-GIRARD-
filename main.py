@@ -59,7 +59,13 @@ def exercice8():
     try:
         nombre1 = int (input("Entrez un nombre"))
         nombre2 = int (input("Entrez un nombre"))
-        resultat = nombre1 / nombre2
+        resultat = 0
+
+        if nombre2 == 0:
+         print(f"Veuillez entrer une autre valeur")
+
+        else:
+         resultat = nombre1 / nombre2
         print(f"{resultat}")
 
     except ValueError:
