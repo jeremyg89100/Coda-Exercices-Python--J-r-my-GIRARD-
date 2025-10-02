@@ -25,6 +25,18 @@ def exercice4():
     except ValueError:
         print(f"Veuillez rentrer des chiffres.")
 
+def exercice5():
+    try:
+        nombre1 = int (input("Entrez un chiffre."))
+        nombre2 = int (input("Entrez un chiffre."))
+        nombreAddition = nombre1 + nombre2
+        print(f"{nombreAddition}")
+
+    except ValueError:
+        print(f"Veuillez taper un chiffre")
+
+    
+
    
 def main():
     # Demande à l'utilisateur quel exercice exécuter
