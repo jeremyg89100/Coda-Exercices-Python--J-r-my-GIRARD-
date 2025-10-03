@@ -494,6 +494,12 @@ def exercice43():
             compteur += 1 
 
     print(f"Dans le mot : {mot}, il y a {compteur} voyelles.")
+
+def exercice44():
+    mot = input("Veuillez rentrer un mot : ")
+    motReverse = mot[::-1]
+    print(f"{motReverse}")
+
     
 
 
