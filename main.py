@@ -373,6 +373,21 @@ def exercice34():
     except ValueError:
         print(f"Veuillez entrer un chiffre ou nombre correct.")
 
+def exercice35():
+
+    try:
+        nombre = int (input("Veuillez choisir un chiffre / nombre : "))
+
+        for compteur in range ( 1 , nombre + 1):
+            carre = compteur ** 2
+            print(f"{carre}")
+
+    except ValueError:
+        print(f"Veuillez rentrer un chiffre / nombre.")
+
+
+    
+
 
 
         
@@ -455,6 +470,8 @@ def main():
         exercice33()
     if choix == "34":
         exercice34()
+    if choix == "35":
+        exercice35()
 
     else:
         print("Exercice non reconnu.")
