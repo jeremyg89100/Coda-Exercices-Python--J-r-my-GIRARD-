@@ -250,6 +250,19 @@ def exercice25():
     except ValueError:
         print(f"Veuillez rentrer un nombre ou un chiffre.")
 
+def exercice26():
+    try:
+        nombre = int (input("Veuillez rentrer un nombre ou un chiffre"))
+
+        if nombre % 5 == 0:
+            print(f"{nombre} est divisible par 5")
+
+        else:
+            print(f"{nombre} n'est pas divisible par 5")
+
+    except ValueError:
+        print(f"Veuillez rentrer un nombre ou un chiffre.")
+
 
 
 
@@ -315,6 +328,8 @@ def main():
         exercice24()
     if choix == "25":
         exercice25()
+    if choix == "26":
+        exercice26()
 
     else:
         print("Exercice non reconnu.")
