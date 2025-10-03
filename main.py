@@ -163,23 +163,18 @@ def exercice19():
         print(f"Veuillez entrer un chiffre")
 
 def exercice20():
+        
+    age = input("Veuillez entrer votre age.")
+    prenom = input("Veuillez entrer votre prénom")
+
+    if prenom.isalpha() and age.isdigit():
+        print(f"Tu t'appelles {prenom} et tu as {age} ans.")
     
-    try:
-        age = int(input("Veuillez entrer votre âge."))
-        prenom = str(input("Veuillez entrer votre prénom."))
-        print(f"tu t'appelles {prenom} et tu as {age} ans")
-
-    except ValueError:
-        print(f"Veuillez rentrer les bonnes indications.")
-
-
-
-
-
-   
+    else:
+        print(f"Veuillez rentrer des données correctes.")
     
-
    
+ 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
