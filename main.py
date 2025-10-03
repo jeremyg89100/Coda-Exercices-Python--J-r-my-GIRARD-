@@ -398,6 +398,25 @@ def exercice36():
 
 
 
+def exercice39():
+
+    input("Pair ou impair ? ")
+    import random
+    
+    nombreRandom = random.randint ( 1 , 10)
+    print(f"{nombreRandom}")
+
+    if nombreRandom % 2 == 0:
+        print(f"La réponse était paire")
+
+    else:
+        print(f"La réponse était impaire")
+
+
+        
+
+
+
 
     
 
@@ -487,6 +506,8 @@ def main():
         exercice35()
     if choix == "36":
         exercice36()
+    if choix == "39":
+        exercice39()
 
     else:
         print("Exercice non reconnu.")
