@@ -186,6 +186,35 @@ def exercice21():
         nombre1 = 0
         print(f"Nul")
 
+def exercice22():
+
+    try:
+        age = int (input("Veuillez rentrer votre âge."))
+
+        if age >= 18:
+            print(f"Majeur")
+        
+        else:
+            print(f"Mineur")
+
+    except ValueError:
+        print(f"Veuillez rentrer un nombre ou chiffre.")
+
+def exercice23():
+
+    try:
+        note = int (input("Veuillez rentrer votre note."))
+
+        if note >= 10:
+            print(f"Validé")
+
+        else:
+            print(f"Refusé")
+
+    except ValueError:
+        print(f"Veuillez rentrer un nombre ou chiffre.")
+
+
         
 
 
@@ -237,6 +266,10 @@ def main():
         exercice20()
     if choix == "21":
         exercice21()
+    if choix == "22":
+        exercice22()
+    if choix == "23":
+        exercice23()
 
     else:
         print("Exercice non reconnu.")
