@@ -263,6 +263,20 @@ def exercice26():
     except ValueError:
         print(f"Veuillez rentrer un nombre ou un chiffre.")
 
+def exercice27():
+    try:
+        age = int (input("Veuillez rentrer votre âge"))
+
+        if age < 12:
+            print(f"Enfant")
+        elif age > 12 and age < 18:
+            print(f"Ado")
+        else:
+            print(f"Adulte")
+
+    except ValueError:
+        print(f"Veuillez rentrer un âge valide.")
+
 
 
 
@@ -330,6 +344,8 @@ def main():
         exercice25()
     if choix == "26":
         exercice26()
+    if choix == "27":
+        exercice27()
 
     else:
         print("Exercice non reconnu.")
