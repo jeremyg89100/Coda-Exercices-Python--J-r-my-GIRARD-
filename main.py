@@ -172,6 +172,23 @@ def exercice20():
     
     else:
         print(f"Veuillez rentrer des données correctes.")
+
+def exercice21():
+    nombre1 = int (input("Veuillez rentrer un nombre"))
+
+    if nombre1 < 0:
+        print(f"Négatif")
+
+    elif nombre1 > 0:
+        print(f"Positif")
+
+    else:
+        nombre1 = 0
+        print(f"Nul")
+
+        
+
+
     
    
  
@@ -218,6 +235,8 @@ def main():
         exercice19()
     if choix =="20":
         exercice20()
+    if choix == "21":
+        exercice21()
 
     else:
         print("Exercice non reconnu.")
