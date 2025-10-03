@@ -432,21 +432,30 @@ def exercice38():
         print(f"Rentrez un chiffre ou un nombre.")
         
 
-
-
 def exercice39():
 
-    input("Pair ou impair ? ")
+    question = input(" Pair ou impair ? ")
+
     import random
-    
     nombreRandom = random.randint ( 1 , 10)
+
     print(f"{nombreRandom}")
 
-    if nombreRandom % 2 == 0:
-        print(f"La réponse était paire")
+    if question == "pair":
+        if nombreRandom % 2 == 0:
+            print(f"Bonne réponse !")
+        else:
+            print(f"Mauvaise réponse !")
+
+    elif question == "impair":
+        if nombreRandom % 2 == 0:
+            print(f"Mauvaise réponse !")
+        else:
+            print (f"Bonne réponse !")
 
     else:
-        print(f"La réponse était impaire")
+        print(f"Vous n'avez pas rentré pair ou impair.")
+
 
 
 def main():
@@ -460,5 +469,6 @@ def main():
         print("Exercice non reconnu.")
 if __name__ == "__main__":
     main()
+
 
 
