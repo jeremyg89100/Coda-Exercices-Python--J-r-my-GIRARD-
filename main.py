@@ -277,6 +277,20 @@ def exercice27():
     except ValueError:
         print(f"Veuillez rentrer un âge valide.")
 
+def exercice28():
+    try:
+        temperature = int (input("Veuillez rentrer une température"))
+
+        if temperature < 0:
+            print(f"Glace")
+        elif temperature > 0 and temperature < 100:
+            print(f"Liquide")
+        else:
+            print(f"Gaz")
+
+    except ValueError:
+        print(f"Veuillez rentrer une température valide.")
+
 
 
 
@@ -346,6 +360,8 @@ def main():
         exercice26()
     if choix == "27":
         exercice27()
+    if choix == "28":
+        exercice28()
 
     else:
         print("Exercice non reconnu.")
