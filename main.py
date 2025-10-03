@@ -366,6 +366,13 @@ def exercice34():
     try:
         nombre = int (input("Veuillez choisir un chiffre/ nombre : "))
 
+        for compteur in range (0 , nombre ):
+            if compteur % 2 == 0:
+                print(compteur)
+
+    except ValueError:
+        print(f"Veuillez entrer un chiffre ou nombre correct.")
+
 
 
         
