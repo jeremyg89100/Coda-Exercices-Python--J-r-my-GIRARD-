@@ -407,6 +407,32 @@ def exercice37():
     except ValueError:
         print(f"Veuillez rentrer une donnée valide.")
 
+def exercice38():
+    try:
+        nombre1 = int (input("Veuillez entre un chiffre ou un nombre : "))
+        nombre2 = int (input("Veuillez entrer un chiffre ou un nombre : ") )
+        choixCalcul = int (input("Entrer 1 pour addition, 2 pour soustraction, 3 pour multiplication, 4 pour division : "))
+
+        if choixCalcul == 1:
+            print(f"{nombre1 + nombre2}")
+
+        elif choixCalcul == 2:
+            print(f"{nombre1 - nombre2}")
+    
+        elif choixCalcul == 3:
+            print(f"{nombre1 * nombre2}")
+
+        elif choixCalcul == 4:
+            print (f"{nombre1 / nombre2}")
+
+        else:
+            print(f"Vous n'avez pas rentré une bonne valeure.")
+    
+    except ValueError:
+        print(f"Rentrez un chiffre ou un nombre.")
+        
+
+
 
 def exercice39():
 
