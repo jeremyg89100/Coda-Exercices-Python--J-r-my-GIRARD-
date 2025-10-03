@@ -456,6 +456,14 @@ def exercice39():
     else:
         print(f"Vous n'avez pas rentré pair ou impair.")
 
+def exercice40():
+    motDePasse = input("Rentrez un mot de passe avec plus de 6 caractères : ")
+    if len(motDePasse) > 6:
+        print(f"Valide.")
+
+    else:
+        print(f"Trop court.")
+
 
 
 def main():
