@@ -458,11 +458,23 @@ def exercice39():
 
 def exercice40():
     motDePasse = input("Rentrez un mot de passe avec plus de 6 caractères : ")
-    if len(motDePasse) > 6:
+    if len(motDePasse) >= 6:
         print(f"Valide.")
 
     else:
         print(f"Trop court.")
+
+def exercice41():
+    notesEleve = input("Veuillez entrer 5 notes.").split()
+
+    if len(notesEleve) == 5:
+        notes = [float(x) for x in notesEleve]
+        moyenne = sum(notes) / len(notesEleve)
+        print(f"Votre moyenne est de {moyenne}")
+
+    else:
+        print(f"Vous n'avez pas rentré 5 notes.")
+    
 
 
 
