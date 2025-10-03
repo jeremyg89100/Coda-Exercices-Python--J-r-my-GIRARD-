@@ -474,6 +474,15 @@ def exercice41():
 
     else:
         print(f"Vous n'avez pas rentré 5 notes.")
+
+def exercice42():
+    liste = input ("Veuillez entrer 5 chiffres ou nombres : ").split()
+
+    if len(liste) == 5:
+        print(f"Le minimum est {min(liste)} et le maximum est {max(liste)}")
+
+    else:
+        print(f"Vous n'avez pas rentré 5 valeurs.")
     
 
 
