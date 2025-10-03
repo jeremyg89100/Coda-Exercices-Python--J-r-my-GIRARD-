@@ -347,10 +347,24 @@ def exercice32():
             total = total + compteur
             print(f"{total}")
           
+    except ValueError:
+        print(f"Veuillez rentrer un nombre ou chiffre valide.")
+
+def exercice33():
+    try:
+    
+        nombre = int (input("Veuillez choisir un chiffre : "))
+
+        for compteur in range( 1 , 11):
+            total = compteur * nombre
+            print(f"{total}")
 
     except ValueError:
         print(f"Veuillez rentrer un nombre ou chiffre valide.")
 
+def exercice34():
+    try:
+        nombre = int (input("Veuillez choisir un chiffre/ nombre : "))
 
 
 
@@ -430,6 +444,10 @@ def main():
         exercice31()
     if choix == "32":
         exercice32()
+    if choix == "33":
+        exercice33()
+    if choix == "34":
+        exercice34()
 
     else:
         print("Exercice non reconnu.")
