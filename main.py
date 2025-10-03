@@ -331,9 +331,25 @@ def exercice31():
 
             if compteur == 0:
                 break
-
+            
     except ValueError:
         print(f"Veuillez entrer un nombre ou un chiffre")
+
+
+def exercice32():
+
+    try:
+        nombre = int (input("Veuillez entrer un chiffre ou un nombre"))
+        total = 0
+        compteur = 0
+
+        for compteur in range( compteur , nombre + 1 ):
+            total = total + compteur
+            print(f"{total}")
+          
+
+    except ValueError:
+        print(f"Veuillez rentrer un nombre ou chiffre valide.")
 
 
 
@@ -412,6 +428,8 @@ def main():
         exercice30()
     if choix == "31":
         exercice31()
+    if choix == "32":
+        exercice32()
 
     else:
         print("Exercice non reconnu.")
