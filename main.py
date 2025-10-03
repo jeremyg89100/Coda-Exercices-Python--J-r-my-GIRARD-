@@ -226,7 +226,6 @@ def exercice24():
             print(f"Les données rentrées sont égales.")
 
         else:
-            nombre1 < nombre2
             print(f"{nombre2} est plus grand.")
     
     except ValueError:
@@ -290,6 +289,25 @@ def exercice28():
 
     except ValueError:
         print(f"Veuillez rentrer une température valide.")
+
+def exercice29():
+    try:
+        note = int (input("Veuillez rentrer votre note : "))
+
+        if note < 10:
+            print(f"Recalé !")
+        
+        elif note > 10 and note < 12:
+            print(f"Passable.")
+        
+        elif note > 12 and note < 16:
+            print(f"Bien")
+
+        else:
+            print(f"Très bien !")
+
+    except ValueError:
+        print(f"Veuillez rentrer une note valide.")
 
 
 
@@ -362,6 +380,8 @@ def main():
         exercice27()
     if choix == "28":
         exercice28()
+    if choix == "29":
+        exercice29()
 
     else:
         print("Exercice non reconnu.")
