@@ -396,6 +396,16 @@ def exercice36():
     except ValueError:
         print(f"Veuillez entrer un chiffre ou nombre valide.")
 
+def exercice37():
+    compteur = 1
+    hauteur = int (input("Veuillez rentrer la hauteur de la pyramide."))
+    try:
+        for i in range(hauteur):
+            print(f"0"*(hauteur - 1 - i),"1"*(compteur),"0"*(hauteur - 1 - i))
+            compteur = compteur + 2
+
+    except ValueError:
+        print(f"Veuillez rentrer une donnée valide.")
 
 
 def exercice39():
@@ -413,102 +423,13 @@ def exercice39():
         print(f"La réponse était impaire")
 
 
-        
-
-
-
-
-    
-
-
-
-        
-
-
-        
-
-
-    
-   
- 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "1":
-        exercice1()
-    if choix == "2":
-        exercice2()
-    if choix == "3":
-        exercice3()
-    if choix == "4":
-        exercice4()
-    if choix == "5":
-        exercice5()
-    if choix == "6":
-        exercice6()
-    if choix == "7":
-        exercice7()
-    if choix == "8":
-        exercice8()
-    if choix =="9":
-        exercice9()
-    if choix == "10":
-        exercice10()
-    if choix == "11":
-        exercice11()
-    if choix == "12":
-        exercice12()
-    if choix == "13":
-        exercice13()
-    if choix =="14":
-        exercice14()
-    if choix == "15":
-        exercice15()
-    if choix == "16":
-        exercice16()
-    if choix == "17":
-        exercice17()
-    if choix == "18":
-        exercice18()
-    if choix == "19":
-        exercice19()
-    if choix =="20":
-        exercice20()
-    if choix == "21":
-        exercice21()
-    if choix == "22":
-        exercice22()
-    if choix == "23":
-        exercice23()
-    if choix == "24":
-        exercice24()
-    if choix == "25":
-        exercice25()
-    if choix == "26":
-        exercice26()
-    if choix == "27":
-        exercice27()
-    if choix == "28":
-        exercice28()
-    if choix == "29":
-        exercice29()
-    if choix == "30":
-        exercice30()
-    if choix == "31":
-        exercice31()
-    if choix == "32":
-        exercice32()
-    if choix == "33":
-        exercice33()
-    if choix == "34":
-        exercice34()
-    if choix == "35":
-        exercice35()
-    if choix == "36":
-        exercice36()
-    if choix == "39":
-        exercice39()
-
+    nom_fonction = f"exercice{choix}"
+    if nom_fonction in globals():
+        globals()[nom_fonction]()
+   
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
