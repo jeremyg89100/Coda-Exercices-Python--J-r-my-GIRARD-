@@ -483,6 +483,17 @@ def exercice42():
 
     else:
         print(f"Vous n'avez pas rentré 5 valeurs.")
+
+def exercice43():
+    mot = input("Veuillez rentrer un mot : ")
+    voyelle = "aeiouy"
+
+    compteur = 0
+    for lettre in mot:
+        if lettre in voyelle:
+            compteur += 1 
+
+    print(f"Dans le mot : {mot}, il y a {compteur} voyelles.")
     
 
 
