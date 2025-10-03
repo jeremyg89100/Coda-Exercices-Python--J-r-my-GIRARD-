@@ -232,6 +232,27 @@ def exercice24():
     except ValueError:
         print(f"Veuillez rentrer un nombre ou un chiffre.")
 
+def exercice25():
+    try:
+        nombre1 = int (input("Veuillez rentrer un chiffre ou un nombre"))
+        nombre2 = int(input("Veuillez rentrer un chiffre ou un nombre"))
+
+        if nombre1 > nombre2:
+            print(f"Ordre décroissant")
+
+        elif nombre1 == nombre2:
+            print(f"Les données rentrées sont égales.")
+
+        else:
+            nombre1 < nombre2
+            print(f"Ordre croissant.")
+    
+    except ValueError:
+        print(f"Veuillez rentrer un nombre ou un chiffre.")
+
+
+
+
         
 
 
@@ -292,6 +313,8 @@ def main():
         exercice23()
     if choix == "24":
         exercice24()
+    if choix == "25":
+        exercice25()
 
     else:
         print("Exercice non reconnu.")
